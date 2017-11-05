@@ -1,0 +1,169 @@
+@font-face {
+  font-family: billabong;
+  src: url("/font/Billabong.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/font/CenturyGothic.ttf");
+  font-weight: bold;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.container {
+  font-family: "Century Gothic", AppleGothic, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+.container .title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3em;
+  margin: 0;
+}
+.homepage-menu {
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+  margin: 20px 0;
+}
+.homepage-menu li {
+  line-height: 12px;
+  margin-right: 23px;
+  display: inline;
+}
+.homepage-menu li a {
+  color: #000;
+  text-decoration: none;
+}
+.homepage-menu li a.active {
+  border-bottom: 2px solid #999;
+}
+.homepage-cover {
+  width: 80%;
+  max-width: 550px;
+}
+.homepage-describe {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.homepage-describe .italic {
+  font-style: italic;
+}
+.homepage-instagram,
+.homepage-contact-me {
+  color: #000;
+  text-decoration: none;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+.homepage-instagram .instagram-text,
+.homepage-contact-me .instagram-text {
+  padding-left: 5px;
+  font-size: 25px;
+  font-family: billabong;
+}
+.article-container {
+  max-width: 1000px;
+}
+.article-container .bold-title {
+  font-weight: 999;
+}
+.article-container .article-preview {
+  display: inline-block;
+}
+.article-container .article-preview .article-cover {
+  display: block;
+  width: 309px;
+  height: 172px;
+  overflow: hidden;
+  background: url("/img/mov_shadow.png") no-repeat;
+  padding-top: 7px;
+  padding-left: 7px;
+}
+.article-container .article-preview .article-cover img {
+  width: 100%;
+  height: 100%;
+  max-width: 295px;
+  max-height: 166px;
+  margin: 0 auto;
+}
+.article-container .article-preview .article-title {
+  font-size: 13px;
+  padding-left: 4px;
+}
+.bio-left {
+  font-size: 14px;
+  line-height: 15px;
+  float: left;
+  width: 230px;
+  padding-right: 43px;
+}
+.bio-left .bio-img {
+  margin-top: 30px;
+  width: 100%;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
+  padding: 3px 3px 1px 3px;
+}
+.bio-left .bio-img img {
+  width: 100%;
+}
+.bio-right .bio-title {
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  margin-bottom: 35px;
+}
+.bio-right .body {
+  white-space: normal;
+  word-wrap: normal;
+  word-break: normal;
+  font-size: 14px;
+  line-height: 15px;
+  float: left;
+  width: 614px;
+  color: #666;
+}
+.img {
+  vertical-align: top;
+  display: inline-block;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.resume.container {
+  display: inline-block;
+  padding-top: 0;
+  margin-left: 30px;
+  max-width: 700px;
+  font-family: sans-serif;
+}
+.resume.container p,
+.resume.container li {
+  font-size: 16px;
+}
+.resume.container .contact {
+  display: block;
+  width: 600px;
+  background: #e6ebed;
+  padding: 5px 15px;
+}
+.resume.container .experience ul {
+  margin: 0;
+}
+.resume.container .experience p,
+.resume.container .experience li {
+  margin: 0;
+  line-height: 1.5em;
+}
+.resume.container .column {
+  display: inline-block;
+  width: 300px;
+}
