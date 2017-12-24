@@ -1,11 +1,18 @@
 .article-container {
+  display: flex;
   max-width: 1000px;
 }
 .article-container .bold-title {
-  font-weight: 999;
+  display: none;
 }
 .article-container .article-preview {
-  display: inline-block;
+  flex: 1;
+}
+.article-container .article-preview a {
+  text-decoration: none;
+}
+.article-container .article-preview a:visited {
+  color: #333;
 }
 .article-container .article-preview .article-cover {
   display: block;
@@ -26,4 +33,7 @@
 .article-container .article-preview .article-title {
   font-size: 13px;
   padding-left: 4px;
+  max-width: 300px;
+  word-wrap: break-word;
+  word-break: normal;
 }

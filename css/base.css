@@ -10,10 +10,7 @@
 }
 body {
   overflow-x: hidden;
-}
-a {
-  color: #000;
-  text-decoration: none;
+  padding-left: 150px;
 }
 .container {
   font-family: "Century Gothic", AppleGothic, sans-serif;
@@ -21,7 +18,7 @@ a {
   max-width: 1200px;
   padding: 20px;
 }
-.container .title {
+.container .title∏ {
   font-family: "Courier New", Courier, monospace;
   font-size: 3em;
   margin: 0;
