@@ -182,3 +182,6 @@ body {
   line-height: 1.5em;
   max-width: 640px;
 }
+.post.container a {
+  color: #000;
+}
