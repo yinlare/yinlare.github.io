@@ -72,14 +72,13 @@ body {
   font-family: billabong;
 }
 .article-container {
-  display: flex;
   max-width: 1000px;
 }
 .article-container .bold-title {
   display: none;
 }
 .article-container .article-preview {
-  flex: 1;
+  display: inline-flex;
 }
 .article-container .article-preview a {
   text-decoration: none;
