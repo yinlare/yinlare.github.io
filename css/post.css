@@ -2,6 +2,47 @@
   line-height: 1.5em;
   max-width: 640px;
 }
+@media (max-width: 500px) {
+  .post.container {
+    box-sizing: border-box;
+  }
+}
 .post.container a {
   color: #000;
+}
+@media (max-width: 500px) {
+  .post.container img {
+    text-align: center;
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .post.container ul,
+  .post.container ol {
+    padding-left: 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .post.container li {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .post.container .divider {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+.post.container .cn,
+.post.container .en {
+  text-align: left;
+  padding: 0 20px;
+}
+.post.container .img-wrapper {
+  text-align: center;
+}
+.post.container .img-description {
+  text-indent: 0;
+  text-align: center;
+  font-size: 14px;
 }

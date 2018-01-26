@@ -132,7 +132,7 @@
 <body>
 	<img class="img" src="/img/resume.jpg" alt="resume">
 	<div class="container resume">
-		<h2>Liying Li: an art aficionado with business acumen</h2>
+		<h2><span class="sub-title">Liying Li: </span><span class="sub-title">an art aficionado with business acumen</span></h2>
 		<div class="contact">
 			<p>Contact information:</p>
 			<p>Phone: 917.519.8304</p>
@@ -218,7 +218,6 @@
 			</li>
 			<li>Passed Certified Financial Analysts Level II; June 2011</li>
 		</ul>
-		<br>
 		<h3>Language</h3>
 		<ul>
 			<li>Native in Chinese</li>
@@ -230,6 +229,12 @@
 
 </html>
 
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+		$('.mobile-menu').on('click', function() {
+			$('.homepage-menu').slideToggle()
+		})
+	</script>
 </body>
 
 </html>

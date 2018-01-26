@@ -12,9 +12,18 @@ body {
   overflow-x: hidden;
   padding-left: 150px;
 }
+@media (max-width: 500px) {
+  body {
+    padding-left: 0px;
+  }
+}
 .cn {
   font-family: monospace;
   font-weight: normal !important;
+}
+.cn p {
+  text-indent: 2em;
+  text-align: left;
 }
 .container {
   font-family: "Century Gothic", AppleGothic, sans-serif;
@@ -22,21 +31,67 @@ body {
   max-width: 1200px;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+.container .mobile-menu {
+  display: none;
+}
+@media (max-width: 500px) {
+  .container .mobile-menu {
+    display: inline;
+    position: absolute;
+    background: url("/img/menu.png") 100% 100%;
+    height: 21px;
+    width: 20px;
+    right: 25px;
+    top: 27px;
+  }
+}
 .container .title {
   font-family: "Courier New", Courier, monospace;
   font-size: 3em;
   margin: 0;
 }
+@media (max-width: 500px) {
+  .container .title {
+    font-size: 2em;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+}
 .homepage-menu {
   list-style: none;
   font-size: 16px;
-  padding: 0;
+  padding: 0 !important;
   margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .homepage-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    background: #fff;
+  }
 }
 .homepage-menu li {
   line-height: 12px;
   margin-right: 23px;
   display: inline;
+}
+@media (max-width: 500px) {
+  .homepage-menu li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    line-height: 2.5em;
+    text-align: center !important;
+    margin: 0 !important;
+  }
 }
 .homepage-menu li a {
   color: #000;
@@ -95,6 +150,11 @@ body {
   padding-top: 7px;
   padding-left: 7px;
 }
+@media (max-width: 500px) {
+  .article-container .article-preview .article-cover {
+    padding-left: 0px;
+  }
+}
 .article-container .article-preview .article-cover img {
   width: 100%;
   height: 100%;
@@ -103,6 +163,8 @@ body {
   margin: 0 auto;
 }
 .article-container .article-preview .article-title {
+  color: #000;
+  text-align: center;
   font-size: 13px;
   padding-left: 4px;
   max-width: 300px;
@@ -116,11 +178,24 @@ body {
   width: 230px;
   padding-right: 43px;
 }
+@media (max-width: 500px) {
+  .bio-left {
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
 .bio-left .bio-img {
   margin-top: 30px;
   width: 100%;
   box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
   padding: 3px 3px 1px 3px;
+}
+@media (max-width: 500px) {
+  .bio-left .bio-img {
+    margin-top: 0px;
+  }
 }
 .bio-left .bio-img img {
   width: 100%;
@@ -130,6 +205,12 @@ body {
   position: relative;
   top: 10px;
   margin-bottom: 35px;
+}
+@media (max-width: 500px) {
+  .bio-right .bio-title {
+    text-indent: 0;
+    text-align: center;
+  }
 }
 .bio-right .body {
   white-space: normal;
@@ -141,12 +222,29 @@ body {
   width: 614px;
   color: #666;
 }
+@media (max-width: 500px) {
+  .bio-right .body {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+.bio-right.cn .body {
+  text-indent: 2em;
+  line-height: 1.5em;
+}
 .img {
   vertical-align: top;
   display: inline-block;
   width: 300px;
   margin-left: 20px;
   margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .img {
+    display: block;
+    margin: 30px auto 0 auto;
+  }
 }
 .resume.container {
   display: inline-block;
@@ -155,15 +253,46 @@ body {
   max-width: 700px;
   font-family: sans-serif;
 }
+@media (max-width: 500px) {
+  .resume.container {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+  }
+}
+@media (max-width: 500px) {
+  .resume.container h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .resume.container h2 .sub-title {
+    line-height: 1.5em;
+    display: inline-block;
+  }
+}
 .resume.container p,
 .resume.container li {
   font-size: 16px;
+}
+@media (max-width: 500px) {
+  .resume.container p,
+  .resume.container li {
+    font-size: 14px;
+  }
 }
 .resume.container .contact {
   display: block;
   width: 600px;
   background: #e6ebed;
   padding: 5px 15px;
+}
+@media (max-width: 500px) {
+  .resume.container .contact {
+    width: auto;
+    margin: 0;
+  }
 }
 .resume.container .experience ul {
   margin: 0;
@@ -181,6 +310,47 @@ body {
   line-height: 1.5em;
   max-width: 640px;
 }
+@media (max-width: 500px) {
+  .post.container {
+    box-sizing: border-box;
+  }
+}
 .post.container a {
   color: #000;
+}
+@media (max-width: 500px) {
+  .post.container img {
+    text-align: center;
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .post.container ul,
+  .post.container ol {
+    padding-left: 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .post.container li {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .post.container .divider {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+.post.container .cn,
+.post.container .en {
+  text-align: left;
+  padding: 0 20px;
+}
+.post.container .img-wrapper {
+  text-align: center;
+}
+.post.container .img-description {
+  text-indent: 0;
+  text-align: center;
+  font-size: 14px;
 }

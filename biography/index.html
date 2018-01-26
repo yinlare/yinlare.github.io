@@ -132,21 +132,24 @@
 <body>
 
 	<div class="container">
-		<h1 class="title">ART MONOLOGUE</h1>
+		<div>
+	<h1 class="title">ART MONOLOGUE</h1>
+	<span class="mobile-menu"></span>
+</div>
 		
 
 <ul class="homepage-menu">
 	
 		<li>
-			<a href="/">HOME</a>
+			<a href="/">Home</a>
 		</li>
 	
 		<li>
-			<a href="/observation_and_insights">OBSERVATION AND INSIGHTS</a>
+			<a href="/observation_and_insights">Observation and Insights</a>
 		</li>
 	
 		<li>
-			<a href="/biography">BIOGRAPHY</a>
+			<a href="/biography">Biography</a>
 		</li>
 	
 		<li>
@@ -174,6 +177,12 @@
 
 </html>
 
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+		$('.mobile-menu').on('click', function() {
+			$('.homepage-menu').slideToggle()
+		})
+	</script>
 </body>
 
 </html>
