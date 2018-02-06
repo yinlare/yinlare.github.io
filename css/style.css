@@ -356,3 +356,6 @@ body {
   text-align: center;
   font-size: 14px;
 }
+.post.container .no-indent {
+  text-indent: 0;
+}
