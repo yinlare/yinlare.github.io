@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   src: url("/font/CenturyGothic.ttf");
   font-weight: bold;
 }
@@ -26,7 +26,7 @@ body {
   text-align: left;
 }
 .container {
-  font-family: "Century Gothic", AppleGothic, sans-serif;
+  font-family: 'Century Gothic', AppleGothic, sans-serif;
   width: 100%;
   max-width: 1200px;
   padding: 20px;
@@ -52,7 +52,7 @@ body {
   }
 }
 .container .title {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 3em;
   margin: 0;
 }
@@ -63,4 +63,24 @@ body {
     padding-bottom: 8px;
     border-bottom: 1px solid #ddd;
   }
+}
+.lg-backdrop {
+  background-color: rgba(0,0,0,0.6) !important;
+}
+.lg-sub-html {
+  background-color: rgba(0,0,0,0.35) !important;
+}
+.lg-sub-html .sub-text {
+  display: inline-block;
+  text-align: left;
+}
+.lg-sub-html .sub-text p {
+  color: #eee !important;
+  margin: 0;
+  line-height: 24px;
+  font-size: 16px !important;
+  font-family: 'Century Gothic';
+}
+.lg-sub-html .sub-text p+p {
+  margin-top: 20px;
 }

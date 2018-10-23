@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   src: url("/font/CenturyGothic.ttf");
   font-weight: bold;
 }
@@ -26,7 +26,7 @@ body {
   text-align: left;
 }
 .container {
-  font-family: "Century Gothic", AppleGothic, sans-serif;
+  font-family: 'Century Gothic', AppleGothic, sans-serif;
   width: 100%;
   max-width: 1200px;
   padding: 20px;
@@ -52,7 +52,7 @@ body {
   }
 }
 .container .title {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 3em;
   margin: 0;
 }
@@ -63,6 +63,26 @@ body {
     padding-bottom: 8px;
     border-bottom: 1px solid #ddd;
   }
+}
+.lg-backdrop {
+  background-color: rgba(0,0,0,0.6) !important;
+}
+.lg-sub-html {
+  background-color: rgba(0,0,0,0.35) !important;
+}
+.lg-sub-html .sub-text {
+  display: inline-block;
+  text-align: left;
+}
+.lg-sub-html .sub-text p {
+  color: #eee !important;
+  margin: 0;
+  line-height: 24px;
+  font-size: 16px !important;
+  font-family: 'Century Gothic';
+}
+.lg-sub-html .sub-text p+p {
+  margin-top: 20px;
 }
 .homepage-menu {
   list-style: none;
@@ -358,4 +378,55 @@ body {
 }
 .post.container .no-indent {
   text-indent: 0;
+}
+.gallary-container {
+  max-width: 1800px;
+}
+.gallary-container .bold-title {
+  display: none;
+}
+.gallary-container #lightgallery {
+  padding: 0;
+}
+.gallary-container li.galary-preview {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  height: 220px;
+  overflow: hidden;
+}
+.gallary-container li.galary-preview img {
+  width: 100%;
+  display: inherit;
+  -webkit-filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
+  filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
+  position: relative;
+}
+.gallary-container li.galary-preview img::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  opacity: 0.5;
+  background: #adcdef;
+}
+.gallary-container li.galary-preview img#img292 {
+  top: -10px;
+}
+.gallary-container li.galary-preview img#img294 {
+  top: -30px;
+}
+.gallary-container li.galary-preview img#img295 {
+  top: -100px;
+}
+.gallary-container li.galary-preview img#img296 {
+  top: -10px;
+}
+.gallary-container li.galary-preview img#img297 {
+  top: -50px;
 }
