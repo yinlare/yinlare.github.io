@@ -65,7 +65,7 @@ body {
   }
 }
 .lg-backdrop {
-  background-color: rgba(0,0,0,0.6) !important;
+  background-color: rgba(200,200,200,0.8) !important;
 }
 .lg-sub-html {
   background-color: rgba(0,0,0,0.35) !important;
